@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<filter>
+        <filter-name> valfilterdemo </filter-name>
+        <filter-class> com.Backend.ValidationFilter </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name> valfilterdemo </filter-name>
+        <url-pattern> /reg </url-pattern>
+    </filter-mapping>
+
+
+		<servlet>
+			<servlet-name>regdemo</servlet-name>
+			<servlet-class>com.Backend.Register</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>regdemo</servlet-name>
+			<url-pattern>/reg</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>logindemo</servlet-name>
+			<servlet-class>com.Backend.Login</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>logindemo</servlet-name>
+			<url-pattern>/Login</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>logoutdemo</servlet-name>
+			<servlet-class>com.Backend.LogOut</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>logoutdemo</servlet-name>
+			<url-pattern>/LogOut</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+        <servlet-name> epademo </servlet-name>
+        <servlet-class> com.Backend.EditProfilePlus </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> epademo </servlet-name>
+        <url-pattern> /EditProfilePlus </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> educationdemo </servlet-name>
+        <servlet-class> com.Backend.AddEducationDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> educationdemo </servlet-name>
+        <url-pattern> /AddEducationDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> editeducationdemo </servlet-name>
+        <servlet-class> com.Backend.EditEducationDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> editeducationdemo </servlet-name>
+        <url-pattern> /EditEducationDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> addexperiencedemo </servlet-name>
+        <servlet-class> com.Backend.AddExperienceDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> addexperiencedemo </servlet-name>
+        <url-pattern> /AddExperienceDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> editexperiencedemo </servlet-name>
+        <servlet-class> com.Backend.EditExperienceDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> editexperiencedemo </servlet-name>
+        <url-pattern> /EditExperienceDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> deleteeducationdemo </servlet-name>
+        <servlet-class> com.Backend.DeleteEducationDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> deleteeducationdemo </servlet-name>
+        <url-pattern> /DeleteEducationDetails </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> deleteexperiencedemo </servlet-name>
+        <servlet-class> com.Backend.DeleteExperienceDetails </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> deleteexperiencedemo </servlet-name>
+        <url-pattern> /DeleteExperienceDetails </url-pattern>
+    </servlet-mapping>
+    
+  
+    
+    <servlet>
+        <servlet-name> applyforjobdemo </servlet-name>
+        <servlet-class> com.Backend.ApplyForJob </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> applyforjobdemo </servlet-name>
+        <url-pattern> /ApplyForJob </url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name> deleteforjobdemo </servlet-name>
+        <servlet-class> com.Backend.DeleteMyJobApplication </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> deleteforjobdemo </servlet-name>
+        <url-pattern> /DeleteMyJobApplication </url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name> jobsearchbytechnologydemo </servlet-name>
+        <servlet-class> com.Backend.JobSearchByTechnology </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> jobsearchbytechnologydemo </servlet-name>
+        <url-pattern> /JobSearchByTechnology </url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name> jobsearchbylocationdemo </servlet-name>
+        <servlet-class> com.Backend.JobSearchByLocation </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> jobsearchbylocationdemo </servlet-name>
+        <url-pattern> /JobSearchByLocation </url-pattern>
+    </servlet-mapping>
+    
+ </web-app>
